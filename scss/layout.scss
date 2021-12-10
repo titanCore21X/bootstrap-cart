@@ -1,0 +1,28 @@
+@import "variable";
+
+footer {
+    p {
+        color: $deco-color-alt;
+    }
+    .footer-menu {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        .footer-menu-item {
+            color: darkslategrey;
+            &:first-child {
+                margin-bottom: 5px;
+                color: black;
+            }
+        }
+    }
+    .copyright{
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+    .community {
+        padding: 10px;
+    }
+}

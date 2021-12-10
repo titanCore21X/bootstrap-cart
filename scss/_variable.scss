@@ -1,0 +1,12 @@
+// 檔名前加底線(_)是特殊規則，加上底線的scss不會被編譯出來
+$deco-color: deepskyblue;
+$deco-color-alt: deeppink;
+$deco-color-dark: darkmagenta;
+
+
+// 使用%(佔位符placeholder)開頭，就不會被scss編譯出來，除非使用 @extend 調用
+%mybtn {
+    padding: 8px, 12px;
+    border: none;
+    border-radius: 10px;
+}

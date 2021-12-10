@@ -1,0 +1,93 @@
+@import "variable";
+@import "mixin";
+
+#service {
+    .deco-line {
+        position: relative;
+        padding: 20px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            display: block;
+            width: 50px;
+            height: 3px;
+            border-radius: 3px;
+            background-color: $deco-color;
+        }
+    }
+    .card-deck {
+        .bg-round {
+            width: 80px;
+            height: 80px;
+            background-color: hotpink;
+            .bg-icon {
+                line-height: 80px;
+                font-size: 40px;
+            }
+        }
+        .card-body {
+            .card-link {
+                text-decoration: none;
+                .fas {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+#photowall {
+    .box {
+        @include size(100%, 300px, 0);
+        border: 1px solid #000;
+        background-color: gainsboro;
+    }
+}
+
+#product {
+    #product-swiper {
+        .swiper-pagination{
+            bottom: 0;
+            .swiper-pagination-bullet{
+                width: 5px;
+                height: 5px;
+                background-color: $deco-color-alt;
+            }
+        }
+
+
+        .swiper-button-prev, .swiper-button-next{
+            
+            &::after {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+#map {
+    position: relative;
+    .container {
+        position: relative;
+        height: 768px;
+
+        .feedback {
+            z-index: 1;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            width: 500px;
+            background-color: #fff;
+            padding: 15px;
+        }
+    }
+    iframe {
+        position: absolute;
+        top: 0;
+    }
+}
