@@ -44,18 +44,71 @@
   background-color: gainsboro;
 }
 
-#product #product-swiper .swiper-pagination {
+#table .table-link {
+  padding-left: 12px;
+  line-height: 38px;
+}
+
+#product .color-group {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+#product .color-group .color-radio {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#product .color-group .color-radio:checked + .color-label {
+  opacity: 1;
+}
+
+#product .color-group .color-radio::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  border: 2px solid gainsboro;
+  background-color: #fff;
+  opacity: 1;
+}
+
+#product .color-group .color-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  border-radius: 50px;
+  opacity: 0;
+}
+
+#swiper-carousel .swiper-pagination {
   bottom: 0;
 }
 
-#product #product-swiper .swiper-pagination .swiper-pagination-bullet {
+#swiper-carousel .swiper-pagination .swiper-pagination-bullet {
   width: 5px;
   height: 5px;
   background-color: deeppink;
 }
 
-#product #product-swiper .swiper-button-prev::after, #product #product-swiper .swiper-button-next::after {
+#swiper-carousel .swiper-button-prev::after,
+#swiper-carousel .swiper-button-next::after {
   font-size: 20px;
+  color: deeppink;
 }
 
 #map {

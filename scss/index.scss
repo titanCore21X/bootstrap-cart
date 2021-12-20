@@ -47,24 +47,72 @@
         background-color: gainsboro;
     }
 }
+#table {
+    .table-link {
+        padding-left: 12px;
+        line-height: 38px;
+    }
+}
 
 #product {
-    #product-swiper {
-        .swiper-pagination{
-            bottom: 0;
-            .swiper-pagination-bullet{
-                width: 5px;
-                height: 5px;
-                background-color: $deco-color-alt;
+    .color-group {
+        position: relative;
+        width: 20px;
+        height: 20px;
+
+        .color-radio {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            // 兄弟選擇器
+            &:checked + .color-label {
+                opacity: 1;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 20px;
+                height: 20px;
+                border-radius: 50px;
+                border: 2px solid gainsboro;
+                background-color: #fff;
+                opacity: 1;
             }
         }
+        .color-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 16px;
+            height: 16px;
+            margin: 0;
+            border-radius: 50px;
+            opacity: 0;
+        }
+    }
+}
 
+#swiper-carousel {
+    .swiper-pagination {
+        bottom: 0;
+        .swiper-pagination-bullet {
+            width: 5px;
+            height: 5px;
+            background-color: $deco-color-alt;
+        }
+    }
 
-        .swiper-button-prev, .swiper-button-next{
-            
-            &::after {
-                font-size: 20px;
-            }
+    .swiper-button-prev,
+    .swiper-button-next {
+        &::after {
+            font-size: 20px;
+            color: $deco-color-alt;
         }
     }
 }
