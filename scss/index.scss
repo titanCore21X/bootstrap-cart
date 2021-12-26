@@ -1,7 +1,7 @@
 @import "variable";
 @import "mixin";
 
-#service {
+#service, #function {
     .deco-line {
         position: relative;
         padding: 20px;

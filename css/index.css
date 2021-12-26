@@ -1,9 +1,9 @@
-#service .deco-line {
+#service .deco-line, #function .deco-line {
   position: relative;
   padding: 20px;
 }
 
-#service .deco-line::before {
+#service .deco-line::before, #function .deco-line::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -17,22 +17,22 @@
   background-color: deepskyblue;
 }
 
-#service .card-deck .bg-round {
+#service .card-deck .bg-round, #function .card-deck .bg-round {
   width: 80px;
   height: 80px;
   background-color: hotpink;
 }
 
-#service .card-deck .bg-round .bg-icon {
+#service .card-deck .bg-round .bg-icon, #function .card-deck .bg-round .bg-icon {
   line-height: 80px;
   font-size: 40px;
 }
 
-#service .card-deck .card-body .card-link {
+#service .card-deck .card-body .card-link, #function .card-deck .card-body .card-link {
   text-decoration: none;
 }
 
-#service .card-deck .card-body .card-link .fas {
+#service .card-deck .card-body .card-link .fas, #function .card-deck .card-body .card-link .fas {
   font-size: 12px;
 }
 
