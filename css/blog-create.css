@@ -1,0 +1,54 @@
+form {
+  width: 100%;
+  border: 1px solid #000;
+  padding: 50px;
+}
+
+form .row {
+  margin: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+form .label.title {
+  margin-right: 30px;
+}
+
+form .label.author {
+  margin-right: 12px;
+}
+
+form .row.custom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 50px;
+}
+
+form .row.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form .row.btn a {
+  text-decoration: none;
+  margin-right: 50px;
+  color: #767676;
+  background-color: #c8c8c8;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: #767676;
+  -o-border-image: initial;
+     border-image: initial;
+}
+/*# sourceMappingURL=blog-create.css.map */

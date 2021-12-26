@@ -1,0 +1,43 @@
+main .function-area {
+  width: 100%;
+  background-color: hotpink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .function-area a {
+  color: white;
+}
+
+main #message {
+  width: 100%;
+}
+
+main #message .message-card {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 50px 0;
+}
+
+main #message .message-card .msg-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main #message .message-card .msg-info .title {
+  font-size: 28px;
+  margin-right: 30px;
+}
+
+main #message .message-card .msg-info .author {
+  margin-right: auto;
+}
+/*# sourceMappingURL=blog.css.map */
