@@ -6,11 +6,17 @@ form {
         margin: 10px 0px;
         display: flex;
     }
-    .label.title{
-        margin-right: 30px;
+    .label.name {
+        margin-right: 13px;
     }
-    .label.author {
-        margin-right: 12px;
+    .label.img {
+        margin-right: 28px;
+    }
+    .label.price {
+        margin-right: 34px;
+    }
+    .label.qty {
+        margin-right: 43px;
     }
     
     .row.custom {

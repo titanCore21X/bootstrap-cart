@@ -1,0 +1,60 @@
+.container .function-area {
+  width: 100%;
+  background-color: hotpink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container .function-area a {
+  color: white;
+}
+
+.container .product {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .product .img {
+  width: 30%;
+  height: 100%;
+  background-image: url(../img/feliz-nuevo-ano.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container .product .text {
+  width: 70%;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.container .product .text .name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container .product .text .desc {
+  height: 180px;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+}
+
+.container .product .text .price {
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.container .product .text .qty {
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=goods.css.map */
